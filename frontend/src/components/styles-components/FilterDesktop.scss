@@ -1,0 +1,176 @@
+.filterDesktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+  .filterOption-box {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    width: 90%;
+    background-color: #202325;
+    padding-bottom: 10px;
+    height: 120px;
+    border-radius: 8px;
+    border: 1px solid #4c4c4c;
+    .filterDesktopTitle {
+      font-size: 24px;
+      padding-bottom: 20px;
+      color: white;
+      align-self: flex-start;
+      padding-left: 15px;
+      font-family: $fontTitre;
+    }
+    .price-input {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      .filterDesktopTitlePrix {
+        font-size: 24px;
+        padding-bottom: 20px;
+        color: white;
+        align-self: flex-start;
+        font-family: $fontTitre;
+      }
+      .price-range-input {
+        padding-top: 8px;
+        padding-right: 8px;
+
+        .input-wrapper {
+          position: relative;
+          display: inline-block;
+
+          .bouton-prix {
+            border-radius: 10px;
+            border: 1px solid #4c4c4c;
+            width: 100%;
+            font-size: 20px;
+            font-family: $fontText;
+            text-align: start;
+          }
+
+          .euro-symbol {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            font-size: 20px;
+            font-family: $fontText;
+          }
+        }
+      }
+    }
+
+    .filterDesktopContainer {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .filterButton {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #1a1c1e;
+      color: $fourth-color;
+      padding: 5px 16px;
+      border-radius: 5px;
+      border: 1px solid #4c4c4c;
+      font-size: 16px;
+      font-family: $fontText;
+    }
+
+    .filterDropdown {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      background-color: #1a1c1e;
+      border: 1px solid gray;
+      color: white;
+      max-height: 200px;
+      overflow-y: scroll;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      font-family: $fontText;
+      font-size: 16px;
+    }
+
+    .filterDropdownItem {
+      padding: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #4c4c4c;
+      }
+    }
+
+    .price-range-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #202325;
+      border-radius: 8px;
+
+      .price-range-slider {
+        width: 100%;
+        input {
+          width: 100%;
+          -webkit-appearance: none;
+          appearance: none;
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            margin-top: -6px;
+            background-color: $secondary-color;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          &::-webkit-slider-runnable-track {
+            background-color: $fourth-color;
+            height: 6px;
+            cursor: pointer;
+          }
+
+          &::-moz-range-thumb {
+            background-color: $secondary-color;
+            margin-top: -6px;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          &::-moz-range-track {
+            background-color: $primary-color;
+            height: 4px;
+            cursor: pointer;
+          }
+
+          &::-ms-thumb {
+            background-color: $secondary-color;
+            margin-top: -6px;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          &::-ms-fill-lower,
+          &::-ms-fill-upper {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

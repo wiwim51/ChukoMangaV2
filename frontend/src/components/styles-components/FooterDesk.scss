@@ -1,0 +1,66 @@
+@media screen and (min-width: 600px) {
+  .footerDesktop {
+    width: 100vw;
+    height: calc(10vh - 45px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    .switch {
+      padding-left: 40px;
+      padding-top: 15px;
+
+      // .react-switch-handle {
+      //   scale: 0.7;
+      //   padding-top: 4px;
+      // }
+
+      .sunIconDesk {
+        font-size: 35px;
+        color: white;
+        padding-left: 10px;
+        padding-top: 2px;
+      }
+
+      .moonIconDesk {
+        font-size: 35px;
+        color: black;
+        padding-left: 10px;
+        padding-top: 2px;
+      }
+    }
+
+    .termsOfUse {
+      color: white;
+      font-family: $fontText;
+      font-weight: lighter;
+      margin-top: 10px;
+    }
+
+    .brand {
+      font-weight: lighter;
+
+      .romaji {
+        font-size: 30px;
+        font-family: $fontTitre;
+        color: $secondary-color;
+      }
+
+      .kana {
+        font-size: 19px;
+        font-family: $fontText;
+        color: $third-color;
+        font-weight: bold;
+      }
+    }
+
+    .partners {
+      color: white;
+      font-family: $fontText;
+      font-weight: lighter;
+      padding-right: 40px;
+      margin-top: 15px;
+    }
+  }
+}

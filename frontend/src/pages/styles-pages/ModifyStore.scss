@@ -1,0 +1,100 @@
+.modify_store_page {
+  color: $fourth-color;
+  .modify_arrow_left_cart {
+    background-color: pink;
+    scale: 2.5;
+    .modify_ArrowLeft {
+      color: aliceblue;
+      scale: 1.5;
+    }
+  }
+  .modify_store_overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .modify_store_informations {
+    }
+    .modify_store_board {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      // border: 1px $fourth-color solid;
+      border-radius: 20px;
+      height: auto;
+      box-shadow: 1px 1px 5px 1px $fourth-color;
+      .modify_store_table {
+        .modify_store_table_title {
+          display: flex;
+          justify-content: space-between;
+          h2 {
+            font-family: $fontTitre;
+            margin-left: 20px;
+          }
+          button {
+            background: none;
+            border: none;
+            color: $fourth-color;
+            margin-right: 20px;
+          }
+        }
+        .modify_table {
+          width: 90%;
+          border-collapse: separate;
+          overflow: hidden;
+          font-family: $fontText;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          text-align: center;
+          thead {
+            tr {
+              th {
+                background-color: $primary-color;
+                color: $fourth-color;
+                font-family: $fontText;
+                max-width: 145px;
+                min-width: 145px;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                border-top: 1px solid $third-color;
+                .modify_imageProduct {
+                  width: 50px;
+                }
+                .modify_btn_modify {
+                  width: 100px;
+                  background-color: $secondary-color;
+                  color: $fourth-color;
+                  border: none;
+                  border-radius: 20px;
+                  padding: 5px;
+                  font-family: $fontTitre;
+                  font-size: 1rem;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                }
+                .modify_btn_delete {
+                  width: 100px;
+                  background-color: $secondary-color;
+                  color: $fourth-color;
+                  border: none;
+                  border-radius: 20px;
+                  padding: 5px;
+                  font-family: $fontTitre;
+                  font-size: 1rem;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  position: relative;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

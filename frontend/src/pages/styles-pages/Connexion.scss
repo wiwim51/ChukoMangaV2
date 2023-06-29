@@ -1,0 +1,120 @@
+.connexion {
+  height: 100vh;
+
+  .arrow-left-cart {
+    background: transparent;
+    border: none;
+
+    .ArrowLeft {
+      color: $third-color;
+      font-size: 40px;
+      // padding-left: 20px;
+    }
+  }
+
+  .connectTitle {
+    font-family: $fontTitre;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+
+  .connexionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-family: $fontTitre;
+      color: white;
+      padding-bottom: 10px;
+
+      .enterEmail {
+        padding-bottom: 10px;
+      }
+
+      .enterPassword {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 25px;
+      background-color: #d9d9d9;
+    }
+
+    .formLinks {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $secondary-color;
+      padding-top: 30px;
+      padding-bottom: 45px;
+
+      a {
+        color: $secondary-color;
+        font-size: 13px;
+        text-decoration: underline;
+        font-family: $fontTitre;
+      }
+
+      .labelCheckbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+
+        .check {
+          width: 15px;
+          height: 15px;
+        }
+
+        .stayConnected {
+          font-size: 13px;
+          color: white;
+          font-family: $fontTitre;
+        }
+      }
+    }
+
+    .registerLink {
+      font-size: 13px;
+      color: white;
+      font-family: $fontTitre;
+      padding-bottom: 30px;
+
+      a {
+        background: none;
+        border: none;
+        color: $secondary-color;
+        text-decoration: underline;
+        font-size: 13px;
+        font-family: $fontTitre;
+        cursor: pointer;
+      }
+    }
+
+    .submitBtn {
+      margin-top: 30px;
+    }
+
+    .submitButton {
+      background-color: $secondary-color;
+      font-family: $fontTitre;
+      color: white;
+      border-radius: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

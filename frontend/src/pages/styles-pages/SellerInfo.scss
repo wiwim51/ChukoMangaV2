@@ -1,0 +1,261 @@
+@media screen and (max-width: 600px) {
+  .sellerInfo {
+    height: 135vh;
+
+    .infoSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        color: white;
+        font-family: $fontTitre;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      .userImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 140px;
+          height: 140px;
+          border-radius: 30px;
+        }
+
+        p {
+          display: flex;
+          color: $secondary-color;
+          font-family: $fontTitre;
+          text-decoration: underline;
+        }
+      }
+
+      .boardList {
+        display: none;
+      }
+
+      .adminForm {
+        label {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: white;
+            font-family: $fontTitre;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+
+          input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 25px;
+            font-size: 20px;
+            color: white;
+            font-family: $fontText;
+            background-color: transparent;
+            border: 1px solid $third-color;
+          }
+        }
+      }
+
+      .infoLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $secondary-color;
+        font-family: $fontTitre;
+        text-decoration: underline;
+        font-size: 15px;
+        padding-top: 20px;
+
+        .mailChange {
+          display: flex;
+          color: $secondary-color;
+          font-family: $fontTitre;
+          text-decoration: underline;
+          padding-bottom: 25px;
+        }
+
+        .passwordChange {
+          display: flex;
+          color: $secondary-color;
+          font-family: $fontTitre;
+          text-decoration: underline;
+          padding-bottom: 25px;
+        }
+
+        a {
+          color: $secondary-color;
+        }
+      }
+
+      .submitBtn {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .submitButton {
+        background-color: $secondary-color;
+        font-family: $fontTitre;
+        font-size: 25px;
+        color: white;
+        border: none;
+        border-radius: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .btn__disconnect__container {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        .btn__disconnect {
+          background-color: $secondary-color;
+          font-family: $fontTitre;
+          font-size: 20px;
+          color: white;
+          border-radius: 35px;
+          padding-left: 20px;
+          padding-right: 20px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .sellerInfo {
+    // height: 80.9vh;
+
+    .arrow-left-cart {
+      display: none;
+    }
+
+    .infoSection {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 60px;
+      padding-right: 80px;
+
+      h2 {
+        display: none;
+      }
+
+      .userBoardSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1a1c1e;
+        box-shadow: 5px 5px 10px black;
+        border: 1px solid #2c2c2c;
+        border-radius: 20px;
+        padding: 35px;
+
+        .userImg {
+          img {
+            width: 250px;
+            height: 250px;
+            border-radius: 30px;
+          }
+
+          p {
+            display: flex;
+            justify-content: center;
+            color: $secondary-color;
+            font-family: $fontTitre;
+            text-decoration: underline;
+            padding-top: 0;
+            font-size: 15px;
+          }
+        }
+
+        .boardList {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-family: $fontTitre;
+          font-size: 25px;
+          padding-top: 20px;
+
+          li {
+            padding-bottom: 28px;
+            color: white;
+          }
+        }
+      }
+
+      .adminForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 45px;
+
+        label {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+
+          span {
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 50px;
+            font-size: 25px;
+          }
+
+          input {
+            width: 700px;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 25px;
+            color: white;
+            font-family: $fontText;
+            background-color: transparent;
+            border: 1px solid $third-color;
+            margin-top: 20px;
+          }
+        }
+
+        .infoLinks {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: $secondary-color;
+          font-family: $fontTitre;
+          text-decoration: underline;
+          font-size: 15px;
+          padding-top: 20px;
+
+          p {
+            color: $secondary-color;
+            padding-bottom: 10px;
+            cursor: pointer;
+          }
+        }
+
+        .submitBtn {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .submitButton {
+          background-color: $secondary-color;
+          font-family: $fontTitre;
+          font-size: 30px;
+          color: white;
+          border: none;
+          border-radius: 35px;
+          padding-left: 25px;
+          padding-right: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

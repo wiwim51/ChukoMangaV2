@@ -1,0 +1,77 @@
+@media screen and (max-width: 600px) {
+  .burgerMenu {
+    .buttonMenu {
+      background-color: $secondary-color;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      scale: 2;
+      border: none;
+      color: $primary-color;
+      svg {
+        stroke-width: 0.5px;
+        scale: 1.4;
+        position: relative;
+        top: 1px;
+      }
+    }
+    .listMenuDiv {
+      .listMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(8px) brightness(60%);
+        padding-left: 0;
+        height: 91.5vh;
+        margin: 0;
+        width: 100vw;
+        overflow-y: scroll;
+        z-index: 1;
+        li {
+          padding-left: 30px;
+          list-style-type: none;
+          cursor: pointer;
+          font: 30px bold;
+          a {
+            margin: 80px 0;
+            position: relative;
+            display: block;
+            padding: 4px 0;
+            text-transform: uppercase;
+            transition: 1s;
+            &::after {
+              position: absolute;
+              content: "";
+              top: 100%;
+              left: 0;
+              width: 90vw;
+              height: 1px;
+              background: $secondary-color;
+              transform: scaleX(0);
+              transform-origin: right;
+              transition: transform 0.5s;
+            }
+            &:hover::after {
+              transform: scaleX(1);
+              transform-origin: right;
+            }
+          }
+        }
+        :nth-child(n):link {
+          text-decoration: none;
+          color: $fourth-color;
+          text-shadow: 1px 1px 1px black;
+        }
+        :nth-child(n):visited {
+          text-decoration: none;
+          color: $fourth-color;
+          text-shadow: 1px 1px 1px black;
+        }
+        :nth-child(n):hover {
+          color: $secondary-color;
+          // text-shadow: 1px 1px 1px black;
+        }
+      }
+    }
+  }
+}

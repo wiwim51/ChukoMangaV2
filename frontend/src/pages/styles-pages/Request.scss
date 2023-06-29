@@ -1,0 +1,57 @@
+.request {
+  height: 80vh;
+
+  h2 {
+    color: white;
+    font-family: $fontTitre;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+
+  p {
+    color: white;
+    font-family: $fontTitre;
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+
+  .requestForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-family: $fontTitre;
+      color: white;
+      padding-bottom: 25px;
+
+      span {
+        padding-bottom: 25px;
+      }
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 25px;
+      background-color: #d9d9d9;
+    }
+
+    .submitBtn {
+      margin-top: 30px;
+    }
+
+    .submitButton {
+      background-color: $secondary-color;
+      font-family: $fontTitre;
+      color: white;
+      border-radius: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

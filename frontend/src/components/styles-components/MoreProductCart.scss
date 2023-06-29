@@ -1,0 +1,258 @@
+@media screen and (max-width: 600px) {
+  .moreproduct-container {
+    width: 90%;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 4px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+
+    h3 {
+      font-family: $fontTitre;
+      font-size: 0.9em;
+      font-weight: lighter;
+      color: $fourth-color;
+      position: relative;
+      top: 10px;
+      left: 30px;
+      padding-bottom: 10px;
+    }
+
+    .all-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 15px 0;
+
+      .image-product-cart {
+        width: 80px;
+        height: auto;
+        padding-left: 10px;
+      }
+      .title-btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+        .title-price-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          color: $fourth-color;
+          font-family: $fontTitre;
+
+          h2 {
+            width: 100px;
+          }
+          h2,
+          p {
+            font-size: 0.8em;
+            font-weight: lighter;
+          }
+        }
+
+        .btn-container {
+          display: flex;
+          gap: 10px;
+          padding-left: 10px;
+
+          .btn-add-cart {
+            background: $secondary-color;
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-family: $fontTitre;
+            font-size: 0.7em;
+            height: 30px;
+            width: 145px;
+            display: flex;
+            justify-content: center;
+            font-weight: lighter;
+            color: $fourth-color;
+            border: none;
+            letter-spacing: 1px;
+            filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+            cursor: pointer;
+          }
+          .btn-added-cart {
+            font-size: 12px;
+            font-weight: lighter;
+            text-align: center;
+            width: 80px;
+            background-color: $third-color;
+            border-radius: 30px;
+            color: $fourth-color;
+            margin: 0px;
+            margin-top: 8px;
+            border: none;
+          }
+
+          .btn-fav-cart {
+            background: transparent;
+            border: none;
+            font-size: 1.8em;
+            color: $third-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .prix-total-container {
+      height: 100%;
+      font-family: $fontTitre;
+      color: $fourth-color;
+      padding-right: 10px;
+      font-size: 0.8em;
+    }
+
+    .border-spaceline {
+      border-bottom: 1px solid $third-color;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .moreproduct-container {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 4px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+
+    h3 {
+      font-family: $fontTitre;
+      font-size: 0.9em;
+      font-weight: lighter;
+      color: $fourth-color;
+      position: relative;
+      top: 10px;
+      left: 30px;
+      padding-bottom: 10px;
+    }
+
+    .all-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 15px 0;
+
+      .image-product-cart {
+        width: 80px;
+        height: auto;
+        padding-left: 10px;
+      }
+      .title-btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 300px;
+
+        .title-price-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          color: $fourth-color;
+          font-family: $fontTitre;
+
+          h2,
+          p {
+            font-size: 0.8em;
+            font-weight: lighter;
+          }
+        }
+
+        .btn-container {
+          display: flex;
+          gap: 50px;
+          padding-left: 10px;
+
+          .btn-add-cart {
+            background: $secondary-color;
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-family: $fontTitre;
+            font-size: 0.7em;
+            height: 30px;
+            width: 145px;
+            display: flex;
+            justify-content: center;
+            font-weight: lighter;
+            color: $fourth-color;
+            border: none;
+            letter-spacing: 1px;
+            filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+            cursor: pointer;
+          }
+          .btn-added-cart {
+            font-size: 12px;
+            font-weight: lighter;
+            text-align: center;
+            width: 80px;
+            background-color: $third-color;
+            border-radius: 30px;
+            color: $fourth-color;
+            margin: 0px;
+            margin-top: 8px;
+            border: none;
+          }
+
+          .btn-fav-cart {
+            background: transparent;
+            border: none;
+            font-size: 1.8em;
+            color: $third-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .prix-total-container {
+      height: 100%;
+      font-family: $fontTitre;
+      color: $fourth-color;
+      padding-right: 10px;
+      font-size: 0.8em;
+    }
+
+    .border-spaceline {
+      border-bottom: 1px solid $third-color;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

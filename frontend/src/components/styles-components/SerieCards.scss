@@ -1,0 +1,145 @@
+@media screen and (max-width: 600px) {
+  .SerieCardComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 10px 5px;
+    .SerieCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 140px;
+      width: 110px;
+
+      .SerieTome {
+        position: relative;
+        top: -154px;
+        color: $fourth-color;
+        font-size: 12px;
+        font-family: $fontTitre;
+        text-align: center;
+        opacity: 1;
+        background-color: $secondary-color;
+        border-radius: 8px;
+        left: 24px;
+        padding: 2px;
+      }
+
+      .SeriePrix {
+        position: relative;
+        top: -56px;
+        color: $fourth-color;
+        font-size: 12px;
+        font-family: $fontTitre;
+        text-align: center;
+        opacity: 1;
+        background-color: $secondary-color;
+        border-radius: 8px;
+        right: 26px;
+        padding: 2px;
+      }
+
+      .Seriepicture-cards {
+        height: 140px;
+        width: 100px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) {
+  .SerieCardComponent {
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // padding: 10px 5px;
+
+    .SerieCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // height: 140px;
+      // width: 110px;
+      margin: 10px;
+
+      .SerieTome {
+        position: relative;
+        top: -100px;
+        color: #f7f7f7;
+        font-size: 20px;
+        font-family: "RocknRollOne-Regular";
+        text-align: center;
+        opacity: 1;
+        background-color: #ff8040;
+        border-radius: 8px;
+        left: -5px;
+        padding: 5px;
+      }
+
+      .SeriePrix {
+        position: relative;
+        top: -94px;
+        color: #f7f7f7;
+        font-size: 16px;
+        font-family: "RocknRollOne-Regular";
+        text-align: center;
+        opacity: 1;
+        background-color: #ff8040;
+        border-radius: 8px;
+        left: -5px;
+        padding: 2px;
+      }
+      .Seriepicture-cards {
+        width: 175px;
+        border-radius: 20px;
+        height: 250px;
+      }
+    }
+    &.genre-style {
+      .SerieCard {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        width: 200px;
+        border-radius: 70px;
+
+        .SerieTome {
+          position: relative;
+          top: -100px;
+          color: $fourth-color;
+          font-size: 20px;
+          font-family: $fontTitre;
+          text-align: center;
+          opacity: 1;
+          background-color: $secondary-color;
+          border-radius: 8px;
+          left: -5px;
+          padding: 5px;
+        }
+        .SeriePrix {
+          position: relative;
+          top: -94px;
+          color: $fourth-color;
+          font-size: 16px;
+          font-family: $fontTitre;
+          text-align: center;
+          opacity: 1;
+          background-color: $secondary-color;
+          border-radius: 8px;
+          left: -5px;
+          padding: 2px;
+        }
+        .Seriepicture-cards {
+          height: 250px;
+          width: 200px;
+
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}

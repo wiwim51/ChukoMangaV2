@@ -1,0 +1,1245 @@
+@import "./variable/variable.scss";
+@import "./pages/styles-pages/DetailProduit.scss";
+@import "./components/styles-components/Catalogue.scss";
+@import "./pages/styles-pages/Home.scss";
+@import "./components/styles-components/Navbar.scss";
+@import "./components/styles-components/ConnectModal.scss";
+@import "./components/styles-components/RegisterModal.scss";
+@import "./components/styles-components/EmailModal.scss";
+@import "./components/styles-components/PasswordModal.scss";
+@import "./components/styles-components/ForgottenPasswordModal.scss";
+@import "./components/styles-components/FooterMobile.scss";
+@import "./components/styles-components/Seller.scss";
+@import "./pages/styles-pages/SearchBar.scss";
+@import "./pages/styles-pages/SeriesDescription.scss";
+@import "./components/styles-components/RequestModal.scss";
+@import "./pages/styles-pages/Connexion.scss";
+@import "./pages/styles-pages/Register.scss";
+@import "./pages/styles-pages/ForgottenPassword.scss";
+@import "./pages/styles-pages/Cart.scss";
+@import "./pages/styles-pages/UserLambda.scss";
+@import "./pages/styles-pages/UserInfo.scss";
+@import "./pages/styles-pages/ChangeEmail.scss";
+@import "./pages/styles-pages/ChangePassword.scss";
+@import "./pages/styles-pages/Request.scss";
+@import "./pages/styles-pages/RequestList.scss";
+@import "./pages/styles-pages/Favorites.scss";
+@import "./pages/styles-pages/OrderHistory.scss";
+@import "./pages/styles-pages/MessageHistory.scss";
+@import "./pages/styles-pages/UserAdmin.scss";
+@import "./pages/styles-pages/SellerInfo.scss";
+@import "./pages/styles-pages/SellHistory.scss";
+@import "./pages/styles-pages/ProductSell.scss";
+@import "./pages/styles-pages/Help.scss";
+@import "./pages/styles-pages/Hotline.scss";
+@import "./pages/styles-pages/Store.scss";
+@import "./pages/styles-pages/ModifyStore.scss";
+@import "../src/components/styles-components/BurgerMenu.scss";
+@import "../src/components/styles-components/TopVentes.scss";
+@import "./components/styles-components/FooterDesk.scss";
+@import "./components/styles-components/Cards.scss";
+@import "./components/styles-components/TotalCart.scss";
+@import "./components/styles-components/MoreProductCart.scss";
+@import "./components/styles-components/ProductCart.scss";
+@import "./components/styles-components/FilterMobile.scss";
+@import "./components/styles-components/FilterDesktop.scss";
+@import "./components/styles-components/SerieCards.scss";
+@import "./components/styles-components/LogoutModal.scss";
+@import "./stripe/styles-stripe/CheckoutForm.scss";
+
+body {
+  // background-color: #1c1c1c;
+  overflow: auto;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // ::-webkit-scrollbar {
+  //   background: transparent;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //   background: $third-color;
+  //   border-radius: 10px;
+  // }
+  // ::-webkit-scrollbar-corner {
+  //   border-radius: 10px;
+  // }
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "RocknRollOne-Regular";
+  src: url(./assets/fonts/RocknRollOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+#dark {
+  background-color: $primary-color;
+
+  ::-webkit-scrollbar {
+    background: $primary-color;
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $third-color;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-corner {
+    border-radius: 10px;
+  }
+}
+
+#light {
+  background-color: $fourth-color;
+
+  .navToolDesk {
+    color: $primary-color;
+
+    li {
+      color: black;
+    }
+  }
+
+  .deskNavIcons {
+    color: $primary-color;
+
+    .userIconNav {
+      color: $primary-color;
+    }
+
+    .cartIconNav {
+      color: $primary-color;
+    }
+  }
+
+  //   // stripe
+
+  //   .page__payment {
+  //     height: 100vh;
+  //     width: auto;
+  //     position: relative;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     flex-direction: column;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     .popup__payment {
+  //         border: 1px solid $third-color;
+  //         border-radius: 20px;
+  //         background-color: $primary-color;
+  //         width: 400px;
+  //         height: 300px;
+  //         position: absolute;
+  //         bottom: 340px;
+  //         left: 750px;
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         font-family: $fontText;
+  //         color: $third-color;
+  //         font-size: 30px;
+  //     }
+  //     // stripe design
+
+  //     .payment__container {
+  //         background-color: $fourth-color;
+
+  //         .form__payment {
+
+  //             .info__payment {
+
+  //                 .all-container {
+
+  //                       .title-price-container {
+  //                         color: $primary-color;
+  //                         font-family: $fontTitre;
+  //                       }
+  //         }
+  //     }
+  //         }
+  //         .btn__payment {
+  //             background-color: $third-color;
+  //             color: $fourth-color;
+
+  //             &:hover {
+  //                 background-color: $fourth-color;
+  //                 color: $third-color;
+  //                 border: 2px solid $third-color;
+  //             }
+  //         }
+  //     }
+
+  // }
+
+  // Modal connexion //
+
+  .connectModalContainer {
+    background-color: $fourth-color;
+
+    .title h1 {
+      color: $primary-color;
+    }
+
+    .connexionForm {
+      input {
+        color: $primary-color;
+      }
+
+      .stayConnected {
+        color: $primary-color;
+      }
+
+      .registerLink {
+        color: $primary-color;
+      }
+
+      .submitButton {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Modal inscription //
+
+  .registerModalContainer {
+    background-color: $fourth-color;
+
+    .registerTitle h1 {
+      color: $primary-color;
+    }
+
+    .registerForm {
+      input {
+        color: $primary-color;
+      }
+
+      .connectLink {
+        color: $primary-color;
+      }
+
+      .acceptCGU {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Modal mot de passe oublié //
+
+  .fgtnPasswordModalContainer {
+    background-color: $fourth-color;
+  }
+
+  // Modal email desktop //
+
+  .emailModalContainer {
+    background-color: $fourth-color;
+
+    .emailTitle h1 {
+      color: $primary-color;
+    }
+  }
+
+  // Modal mot de passe desktop //
+
+  .passwordModalContainer {
+    background-color: $fourth-color;
+
+    .passwordTitle h1 {
+      color: $primary-color;
+    }
+  }
+
+  // lightMode MenuBurger
+  .burgerMenu {
+    .buttonMenu {
+      color: $fourth-color;
+    }
+    .listMenu {
+      color: $primary-color;
+      backdrop-filter: blur(8px) brightness(100%);
+      // height: 93.5vh;
+      :nth-child(n):link {
+        text-decoration: none;
+        color: $primary-color;
+        text-shadow: none;
+      }
+      :nth-child(n):visited {
+        text-decoration: none;
+        color: $primary-color;
+        text-shadow: none;
+      }
+    }
+  }
+
+  //lightMode de la screen HOME
+  .catalogue-container {
+    .catalogue-title {
+      color: $primary-color;
+    }
+  }
+
+  // Card catalogue //
+
+  // lightMode du topVentes
+  .topvente {
+    .toptitle {
+      color: $primary-color;
+    }
+    .wrapper {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+  // lightMode du filter mobile
+  .filterMobile {
+    .filterButton {
+      color: $primary-color;
+      background-color: $fourth-color;
+      &.active {
+        background-color: $third-color;
+      }
+    }
+  }
+
+  // lightMode du filter desktop
+
+  .filterDesktop {
+    .filterOption-box {
+      background-color: #ffffff;
+      border: 1px solid #cac9c9;
+      box-shadow: 5px 5px 10px #bdbcbc;
+
+      .filterDesktopTitle {
+        color: black;
+      }
+
+      .price-input {
+        .filterDesktopTitlePrix {
+          color: black;
+        }
+
+        .price-range-input {
+          .input-wrapper {
+            .bouton-prix {
+              border: 1px solid #cac9c9;
+            }
+          }
+        }
+      }
+
+      .filterButton {
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid #cac9c9;
+      }
+
+      .filterDropdown {
+        background-color: #ffffff;
+        border: 1px solid #cac9c9;
+        color: black;
+      }
+
+      .filterDropdownItem {
+        &:hover {
+          background-color: #cac9c9;
+        }
+      }
+
+      .price-range-box {
+        background-color: #ffffff;
+
+        .price-range-slider {
+          input {
+            &::-webkit-slider-runnable-track {
+              background-color: #1a1c1e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // lightMode des Card
+  @media screen and (max-width: 600px) {
+    .picture-cards {
+      box-shadow: 21px 10px 24px 4px #bdbcbc;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .Titre {
+      color: $primary-color;
+    }
+    .Prix {
+      color: $fourth-color;
+    }
+    .btn-add-cart {
+      display: none;
+    }
+    .btn-added-cart {
+      display: none;
+    }
+
+    .Card:hover {
+      .TitreHover {
+        color: $fourth-color;
+      }
+
+      .btn-add-cart {
+        display: block;
+        // box-shadow: 3px 3px 3px #bdbcbc;
+      }
+      .btn-added-cart {
+        display: block;
+      }
+    }
+  }
+  //lightMode de la screen DETAIL PRODUIT
+  .bodyDetailProduit {
+    .description_produit {
+      color: $primary-color;
+    }
+    .button {
+      color: $primary-color;
+    }
+    .autretomes {
+      color: $primary-color;
+      .icons2 {
+        color: $primary-color;
+      }
+    }
+    .autremanga {
+      color: $primary-color;
+      .icons3 {
+        color: $primary-color;
+      }
+    }
+  }
+
+  //lightMode du seller dans DETAIL PRODUIT
+  .seller {
+    .title_seller {
+      color: $primary-color;
+    }
+    .informations_seller {
+      color: $primary-color;
+    }
+  }
+
+  // Page description de la série //
+
+  .seriesDescription {
+    h2 {
+      color: $primary-color;
+    }
+
+    .series {
+      span {
+        color: $primary-color;
+      }
+      p {
+        color: $primary-color;
+      }
+
+      .mobileButton {
+        color: $primary-color;
+        box-shadow: 5px 5px 5px gray;
+      }
+
+      .desktopButton {
+        color: $primary-color;
+        box-shadow: 5px 5px 5px gray;
+      }
+    }
+
+    .othersAvailable {
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Page demande //
+
+  .request {
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $primary-color;
+    }
+
+    .requestForm {
+      label {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Modal demande //
+
+  .requestModalContainer {
+    background-color: $fourth-color;
+
+    .requestTitle h1 {
+      color: $primary-color;
+    }
+  }
+
+  // Page profile user lambda //
+
+  @media screen and (max-width: 600px) {
+    .userLambda {
+      .userName {
+        color: $primary-color;
+      }
+
+      li {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .userLambda {
+      .userSection {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .userName {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Page infos user lambda //
+
+  @media screen and (max-width: 600px) {
+    .userInfo {
+      h2 {
+        color: $primary-color;
+      }
+
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .userInfo {
+      .infoSection {
+        h2 {
+          color: $primary-color;
+        }
+
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .boardList {
+            color: $primary-color;
+
+            li {
+              color: $primary-color;
+            }
+          }
+        }
+
+        .infoForm {
+          span {
+            color: $primary-color;
+          }
+          input {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Page demande //
+
+  @media screen and (max-width: 600px) {
+    .requestList {
+      h2 {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      color: black;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .requestList {
+      .userBoardSection {
+        background-color: $fourth-color;
+        box-shadow: 5px 5px 10px #bdbcbc;
+        border: 1px solid #d9d9d9;
+
+        .boardList {
+          color: $primary-color;
+        }
+
+        li {
+          color: $primary-color;
+        }
+      }
+
+      .userRequestList {
+        p {
+          color: black;
+        }
+      }
+    }
+  }
+
+  // Page favoris //
+
+  @media screen and (max-width: 600px) {
+    .favorites {
+      h2 {
+        color: $primary-color;
+      }
+    }
+  }
+  @media screen and (min-width: 601px) {
+    .favorites {
+      .favSection {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .boardList {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Page historique des commandes //
+
+  @media screen and (max-width: 600px) {
+    .orderHistory {
+      h2 {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .orderHistory {
+      .orderSection {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          boardList {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Page aide //
+
+  @media screen and (max-width: 600px) {
+    .help-container {
+      h2 {
+        color: black;
+      }
+
+      .faqMobile {
+        h3 {
+          color: black;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .help-container {
+      h2 {
+        color: black;
+      }
+
+      .faqMobile {
+        h3 {
+          color: black;
+        }
+
+        .accordionItem {
+          color: black;
+        }
+
+        .accordion-item-content {
+          color: #888888;
+        }
+
+        .otherQuestions {
+          p {
+            color: black;
+          }
+
+          .contactUs {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      .userBoardSection {
+        background-color: #ffffff;
+        box-shadow: 5px 5px 10px #bdbcbc;
+        border: 1px solid #d9d9d9;
+
+        boardList {
+          color: black;
+        }
+
+        li {
+          color: black;
+        }
+      }
+    }
+  }
+
+  // Page Changer d'email //
+
+  .changeYourEmail {
+    h2 {
+      color: $primary-color;
+    }
+
+    .mailForm {
+      span {
+        color: $primary-color;
+      }
+
+      input {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Page Changer de mot de passe //
+
+  .changeYourPassword {
+    h2 {
+      color: $primary-color;
+    }
+
+    .passwordForm {
+      span {
+        color: $primary-color;
+      }
+
+      input {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Page profil user Admin //
+
+  @media screen and (max-width: 600px) {
+    .userAdmin {
+      .adminName {
+        color: $primary-color;
+      }
+      li {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .userAdmin {
+      .userBoardSection {
+        background-color: $fourth-color;
+        box-shadow: 5px 5px 10px #bdbcbc;
+        border: 1px solid #d9d9d9;
+        .adminName {
+          color: $primary-color;
+        }
+
+        li {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  // page STORE
+  @media screen and (min-width: 600px) {
+    .store_page {
+      color: $primary-color;
+      .totalSales {
+        background-color: $fourth-color;
+        box-shadow: 4px 4px 6px $fourth-color;
+        border: 1px solid $third-color;
+      }
+      .visitors {
+        background-color: $fourth-color;
+        box-shadow: 4px 4px 6px $fourth-color;
+        border: 1px solid $third-color;
+      }
+      .totalOrders {
+        background-color: $fourth-color;
+        box-shadow: 4px 4px 6px $fourth-color;
+        border: 1px solid $third-color;
+      }
+    }
+    .store_table {
+      box-shadow: 4px 4px 6px $fourth-color;
+      .store_table_title {
+        button {
+          color: $primary-color;
+        }
+      }
+      .table {
+        th {
+          color: $primary-color;
+        }
+        td {
+          color: $primary-color;
+        }
+      }
+    }
+    // Page form mettre en vente "productSell"
+    @media screen and (max-width: 600px) {
+      .mobileJSX {
+        h2 {
+          color: $primary-color;
+        }
+        .labelImage {
+          input[type="file"] {
+            color: $fourth-color;
+          }
+          input[type="file"]::-webkit-file-upload-button {
+            color: $primary-color;
+          }
+        }
+        label {
+          input {
+            color: $primary-color;
+          }
+          input::placeholder {
+            color: $primary-color;
+          }
+        }
+        select {
+          color: $primary-color;
+        }
+        select:focus {
+          color: $third-color;
+        }
+      }
+    }
+    // le h2 de la media quieries est à revoir car la color ne marche pas....
+    @media screen and (min-width: 601px) {
+      .desktopJSX {
+        h2 {
+          color: $primary-color;
+        }
+        .labelImage {
+          input[type="file"] {
+            color: $fourth-color;
+          }
+          input[type="file"]::-webkit-file-upload-button {
+            color: $primary-color;
+          }
+        }
+        label {
+          input {
+            color: $primary-color;
+          }
+          input::placeholder {
+            color: $primary-color;
+          }
+        }
+        select {
+          color: $primary-color;
+        }
+        select:focus {
+          color: $third-color;
+        }
+      }
+    }
+
+    // Footer desktop //
+    // Page info user Admin //
+
+    @media screen and (max-width: 600px) {
+      .sellerInfo {
+        h2 {
+          color: $primary-color;
+        }
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+
+    @media screen and (min-width: 601px) {
+      .sellerInfo {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .boardList {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+
+        .adminForm {
+          span {
+            color: $primary-color;
+          }
+          input {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    // Page historique des messages //
+
+    @media screen and (max-width: 600px) {
+      .messageHistory {
+        h2 {
+          color: $primary-color;
+        }
+      }
+    }
+
+    @media screen and (min-width: 601px) {
+      .messageHistory {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .boardList {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    // Page historique des ventes //
+    @media screen and (max-width: 600px) {
+      .sellHistory {
+        h2 {
+          color: $primary-color;
+        }
+      }
+    }
+
+    @media screen and (min-width: 601px) {
+      .sellHistory {
+        .userBoardSection {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+
+          .boardList {
+            color: $primary-color;
+          }
+
+          li {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    // Page connexion //
+
+    .connectTitle {
+      color: $primary-color;
+    }
+
+    .connexionForm label {
+      color: $primary-color;
+    }
+
+    .formLinks {
+      .stayConnected {
+        color: $primary-color;
+      }
+    }
+
+    .registerLink {
+      color: $primary-color;
+    }
+
+    .submitButton {
+      box-shadow: 5px 5px 5px gray;
+      color: $primary-color;
+    }
+
+    // Page inscription //
+
+    .registerTitle {
+      color: $primary-color;
+    }
+
+    .registerForm label {
+      color: $primary-color;
+    }
+
+    .registerFormLinks {
+      .acceptCGU {
+        color: $primary-color;
+      }
+    }
+
+    // Page mot de passe oublié //
+
+    .boardList {
+      color: $primary-color;
+    }
+
+    li {
+      color: $primary-color;
+    }
+
+    .sellsBoard {
+      .sellsStatistics {
+        color: black;
+
+        .totalSales {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+        }
+
+        .visitors {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+        }
+
+        .totalOrders {
+          background-color: $fourth-color;
+          box-shadow: 5px 5px 10px #bdbcbc;
+          border: 1px solid #d9d9d9;
+        }
+      }
+
+      .sellsTable {
+        background-color: $fourth-color;
+        box-shadow: 5px 5px 10px #bdbcbc;
+        border: 1px solid #d9d9d9;
+        color: black;
+
+        th {
+          border-bottom: 1px solid #bcbcbc;
+        }
+
+        td {
+          border-bottom: 1px solid #bcbcbc;
+        }
+      }
+    }
+  }
+}
+
+// Page connexion //
+
+.connectTitle {
+  color: $primary-color;
+}
+
+.connexionForm label {
+  color: $primary-color;
+}
+
+.formLinks {
+  .stayConnected {
+    .passwordTitle {
+      color: $primary-color;
+    }
+
+    .passwordForm label {
+      color: $primary-color;
+    }
+
+    // Pagination //
+
+    .numberPageActive,
+    .numberPage {
+      color: $primary-color;
+    }
+
+    // Cart //
+    .title-page-mobile-cart {
+      color: $primary-color;
+    }
+    .productcart-container .empty-cart h1 {
+      color: $primary-color;
+    }
+    .totalcart-container .subtitle-total {
+      color: $primary-color;
+    }
+    .totalcart-container .label-condition-vente {
+      color: $primary-color;
+    }
+    .totalcart-container .label-condition-vente input[type="checkbox"] {
+      background: $fourth-color;
+    }
+    .totalcart-container .btn-commander {
+      color: $primary-color;
+    }
+    .moreproduct-container
+      .all-container
+      .title-btn-container
+      .title-price-container {
+      color: $primary-color;
+    }
+    .moreproduct-container
+      .all-container
+      .title-btn-container
+      .btn-container
+      .btn-add-cart {
+      color: $primary-color;
+    }
+
+    // Footer mobile //
+    .footer {
+      background-color: $fourth-color;
+    }
+
+    // Footer desktop //
+
+    // A RANGER ci-dessous
+    .termsOfUse {
+      color: $primary-color;
+    }
+
+    .partners {
+      color: $primary-color;
+    }
+
+    // scrollbar //
+
+    ::-webkit-scrollbar {
+      background: $fourth-color;
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: $third-color;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-corner {
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .footerDesk {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .footerMobile {
+      display: none;
+    }
+  }
+}
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// button {
+//   font-size: calc(10px + 2vmin);
+// }

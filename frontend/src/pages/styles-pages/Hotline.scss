@@ -1,0 +1,251 @@
+@media screen and (max-width: 600px) {
+  .help-container {
+    height: 155vh;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-family: $fontTitre;
+      font-weight: lighter;
+      padding-top: 20px;
+    }
+
+    .helpSection {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      .faqMobile {
+        h3 {
+          color: white;
+          font-weight: lighter;
+          font-size: 17px;
+          font-family: $fontTitre;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        .accordionItem {
+          color: white;
+          font-family: $fontTitre;
+          // max-width: 700px;
+          //   margin-top: 2rem;
+          padding-bottom: 10px;
+          border-bottom: 2px solid $third-color;
+          cursor: pointer;
+
+          .accordion-item-header {
+            padding-top: 20px;
+            display: flex;
+
+            p {
+              width: 350px;
+            }
+
+            .dropdownArrow {
+              font-size: 35px;
+              color: $third-color;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          }
+
+          .accordion-item-content {
+            max-height: 0;
+            overflow: hidden;
+          }
+        }
+
+        .accordion-item-content {
+          color: #d9d6d6;
+          font-family: $fontTitre;
+          padding-top: 20px;
+          transition: all 1s ease-in-out;
+        }
+
+        .accordionItem.active .accordion-item-content {
+          max-height: 300px;
+        }
+
+        .otherQuestions {
+          padding-top: 20px;
+          p {
+            color: white;
+            font-family: $fontTitre;
+          }
+
+          .contactUs {
+            color: $secondary-color;
+            padding-bottom: 20px;
+          }
+
+          .contactInfo {
+            width: 300px;
+            height: 130px;
+            background-color: #d9d6d6;
+            border-radius: 10px;
+
+            p {
+              padding: 10px;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .userBoardSection {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .help-container {
+    h2 {
+      display: none;
+    }
+
+    .helpSection {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .faqMobile {
+        h3 {
+          color: white;
+          font-weight: lighter;
+          font-size: 25px;
+          font-family: $fontTitre;
+          text-align: center;
+          padding-bottom: 30px;
+          padding-right: 120px;
+        }
+
+        .accordionItem {
+          color: white;
+          font-family: $fontTitre;
+          // max-width: 700px;
+          //   margin-top: 2rem;
+          padding-bottom: 10px;
+          border-bottom: 2px solid $third-color;
+          cursor: pointer;
+
+          .accordion-item-header {
+            padding-top: 20px;
+            display: flex;
+
+            p {
+              width: 530px;
+            }
+
+            .dropdownArrow {
+              font-size: 35px;
+              color: $third-color;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          }
+
+          .accordion-item-content {
+            max-height: 0;
+            overflow: hidden;
+          }
+        }
+
+        .accordion-item-content {
+          color: #d9d6d6;
+          font-family: $fontTitre;
+          padding-top: 20px;
+          max-width: 530px;
+          transition: all 1s ease-in-out;
+        }
+
+        .accordionItem.active .accordion-item-content {
+          max-height: 300px;
+        }
+
+        .otherQuestions {
+          padding-top: 20px;
+          p {
+            color: white;
+            font-family: $fontTitre;
+          }
+
+          .contactUs {
+            color: $secondary-color;
+            padding-bottom: 20px;
+          }
+
+          .contactInfo {
+            width: 530px;
+            height: 150px;
+            background-color: #d9d6d6;
+            border-radius: 10px;
+
+            p {
+              padding: 10px;
+              color: black;
+            }
+          }
+        }
+      }
+
+      .userBoardSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1a1c1e;
+        box-shadow: 5px 5px 10px black;
+        border: 1px solid #2c2c2c;
+        border-radius: 20px;
+        padding: 35px;
+        margin-top: 40px;
+
+        .userProfile {
+          .userName {
+            display: none;
+          }
+
+          .userImg {
+            padding-top: 30px;
+
+            img {
+              width: 200px;
+              height: 200px;
+              border-radius: 30px;
+            }
+          }
+
+          p {
+            display: flex;
+            justify-content: center;
+            color: $secondary-color;
+            font-family: $fontTitre;
+            text-decoration: underline;
+            padding-top: 0;
+            font-size: 15px;
+          }
+        }
+
+        .boardList {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-family: $fontTitre;
+          font-size: 25px;
+          padding-top: 20px;
+
+          li {
+            padding-bottom: 28px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

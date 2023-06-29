@@ -1,0 +1,203 @@
+@media screen and (max-width: 600px) {
+  .catalogue-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    .catalogue-title {
+      padding-left: 10px;
+      padding-bottom: 5px;
+      color: $fourth-color;
+    }
+    .catalogue-box {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .catalogue-box-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .catalogue-box-pagination {
+        height: 27px;
+        .pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: transparent;
+          margin-bottom: 50px;
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          .numberPage {
+            color: $fourth-color;
+            border: 1px solid $third-color;
+            border-radius: 50px;
+            width: 20px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-family: $fontTitre;
+            font-size: 0.8rem;
+
+            &:hover {
+              background-color: $third-color;
+              color: $fourth-color;
+            }
+          }
+          .numberPageActive {
+            color: $fourth-color;
+            border: 2px solid $secondary-color;
+            border-radius: 50px;
+            width: 20px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-family: $fontTitre;
+            font-size: 0.8rem;
+
+            &:hover {
+              background-color: $secondary-color;
+              color: $fourth-color;
+            }
+          }
+          .arrow-page {
+            color: $third-color;
+            background-color: transparent;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+          #page-numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            gap: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .catalogue-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 80vw;
+    .catalogue-title {
+      padding-left: 35px;
+      padding-bottom: 20px;
+      color: white;
+      font-family: $fontTitre;
+      font-weight: lighter;
+    }
+    .catalogue-box {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      .catalogue-box-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .catalogue-box-pagination {
+        .pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+          top: 30px;
+          left: 30px;
+          max-width: 200px;
+
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          .numberPage {
+            color: $fourth-color;
+            border: 1px solid $third-color;
+            border-radius: 50px;
+            width: 20px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-family: $fontTitre;
+            font-size: 0.8rem;
+
+            &:hover {
+              background-color: $third-color;
+              color: $fourth-color;
+            }
+          }
+          .numberPageActive {
+            color: $fourth-color;
+            border: 2px solid $secondary-color;
+            border-radius: 50px;
+            width: 20px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-family: $fontTitre;
+            font-size: 0.8rem;
+
+            &:hover {
+              background-color: $secondary-color;
+              color: $fourth-color;
+            }
+          }
+          .arrow-page {
+            color: $third-color;
+            background-color: transparent;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+          #page-numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            gap: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    // .catalogue-box::-webkit-scrollbar {
+    //   display: none;
+    // }
+  }
+}

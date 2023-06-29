@@ -1,0 +1,349 @@
+@media screen and (max-width: 600px) {
+  .seriesDescription {
+    height: 125vh;
+    .arrow-left-cart {
+      top: -10px;
+      left: 15px;
+    }
+
+    h2 {
+      color: white;
+      font-family: $fontTitre;
+      font-weight: lighter;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .series {
+      display: grid;
+      grid-template-columns: 150px 200px;
+      grid-template-rows: 140px 80px 215px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      padding-top: 30px;
+      padding-left: 15px;
+
+      .seriesImg {
+        grid-area: 1 / 1 / 3 / 2;
+
+        img {
+          width: 130px;
+          height: 210px;
+          border-radius: 30px;
+        }
+      }
+
+      .seriesInfo {
+        grid-area: 1 / 2 / 2 / 3;
+
+        span {
+          color: $secondary-color;
+          font-family: $fontTitre;
+          font-size: 20px;
+          padding: 0 20px;
+        }
+
+        p {
+          color: white;
+          font-family: $fontTitre;
+          padding: 0 20px;
+        }
+      }
+
+      .requestBtn {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-top: 20px;
+        .mobileButton {
+          width: 160px;
+          height: 35px;
+          border: none;
+          border-radius: 25px;
+          background-color: $secondary-color;
+          color: white;
+          font-family: $fontTitre;
+        }
+
+        .desktopButton {
+          display: none;
+        }
+      }
+
+      .description {
+        grid-area: 3 / 1 / 4 / 3;
+        padding-top: 40px;
+        color: white;
+        font-family: $fontTitre;
+        height: 20vh;
+        overflow-y: scroll;
+      }
+    }
+
+    .othersAvailable {
+      padding-top: 20px;
+      padding-left: 20px;
+
+      span {
+        color: white;
+        font-family: $fontTitre;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .tomeImg::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tomeImg {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+
+      img {
+        padding: 10px;
+      }
+    }
+
+    .suggestions {
+      padding-top: 20px;
+      padding-left: 20px;
+
+      span {
+        color: white;
+        font-family: $fontTitre;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .genreImg::-webkit-scrollbar {
+        display: none;
+      }
+
+      .genreImg {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        .arrowUp {
+          display: none;
+        }
+
+        img {
+          padding: 10px;
+        }
+
+        .arrowDown {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .seriesDescription {
+    // height: 100vh;
+    display: flex;
+    // margin: auto;
+    flex-direction: column;
+
+    .arrow-left-cart {
+      display: none;
+    }
+
+    h2 {
+      color: white;
+      font-family: $fontTitre;
+      font-weight: lighter;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-left: 80px;
+    }
+
+    .series {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 50px 140px 170px 275px 0px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      // padding-left: 120px;
+      // padding-top: 55px;
+      // height: 500px;
+      margin-top: 100px;
+
+      img {
+        grid-area: 1 / 1 / 4 / 2;
+        width: 32vh;
+        // height: 100%;
+        border-radius: 20px;
+        // justify-content: center;
+      }
+      .seriesImg {
+        grid-area: 2 / 1 / 4 / 2;
+
+        text-align: center;
+      }
+
+      .seriesInfo {
+        grid-area: 2/ 2 / 2 / 3;
+
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: $secondary-color;
+          font-family: $fontTitre;
+          font-size: 50px;
+          padding: 0 20px;
+        }
+
+        p {
+          color: white;
+          font-family: $fontTitre;
+          font-size: 20px;
+          padding: 0 20px;
+        }
+      }
+
+      .requestBtn {
+        grid-area: 4/2/4/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // padding-left: 16px;
+        margin-top: 150px;
+        .mobileButton {
+          display: none;
+        }
+        p {
+          text-align: center;
+          color: white;
+          font-family: $fontTitre;
+          font-size: 15px;
+          // padding: 0 20px;
+          margin: 25px;
+        }
+        .desktopButton {
+          width: 50px;
+          height: 50px;
+          font-size: 44px;
+          border: none;
+          border-radius: 50%;
+          background-color: #ff8040;
+          color: white;
+          /* font-family: "RocknRollOne-Regular"; */
+          z-index: 1000;
+          cursor: pointer;
+        }
+      }
+
+      .description {
+        grid-area: 3/2/3/3;
+        padding-top: 40px;
+        color: white;
+        font-family: $fontTitre;
+        font-size: 20px;
+        height: 300px;
+        padding-left: 20px;
+        overflow: scroll;
+        z-index: 900;
+        text-align: justify;
+      }
+    }
+
+    .othersAvailable {
+      // padding-top: 100px;
+      // padding-left: 80px;
+      // grid-template-columns: 3% 90% 7%;
+      grid-template-rows: 75px repeat(auto-fit, minmax(200px, 1fr)) 0px;
+      grid-template-columns: 4% repeat(auto-fit, minmax(200px, 1fr)) 0px;
+
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      display: grid;
+      // width: 1000px;
+      margin-top: 160px;
+      grid-auto-rows: auto;
+
+      .otherTomes {
+        grid-area: 1/2/5/3;
+        color: white;
+        font-family: $fontTitre;
+        padding-bottom: 40px;
+        font-size: 30px;
+      }
+
+      .tomeCard::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tomeImg {
+        grid-area: 2/2/3/3;
+        // overflow-x: scroll;
+        // overflow-y: hidden;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .SerieCards {
+        width: 90px;
+        height: 120px;
+        // border-radius: 45px;
+        margin-right: 10px;
+      }
+    }
+    .suggestions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // position: relative;
+      // top: -900px;
+      height: 650px;
+      // width: 300px;
+      // left: 1400px;
+      z-index: 1;
+      grid-area: 1 / 3/ 1 / 3;
+
+      .otherManga {
+        color: white;
+
+        font-family: $fontTitre;
+        font-size: 20px;
+
+        // padding-bottom: 20px;
+        // width: 300px;
+      }
+
+      .genreImg::-webkit-scrollbar {
+        display: none;
+      }
+
+      .genreImg {
+        grid-area: 1 / 3 / 5 / 4;
+        display: flex;
+        flex-direction: column;
+        overflow-x: scroll;
+        align-items: center;
+        width: 300px;
+
+        // .arrowUp {
+        //   font-size: 50px;
+        //   color: $third-color;
+        // }
+
+        img {
+          // width: 100px;
+          // height: 140px;
+          // border-radius: 45px;
+          // padding: 20px;
+        }
+
+        .arrowDown {
+          // font-size: 50px;
+          // color: $third-color;
+        }
+      }
+    }
+  }
+}

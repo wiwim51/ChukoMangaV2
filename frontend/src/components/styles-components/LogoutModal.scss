@@ -1,0 +1,46 @@
+.logout__modal__container {
+  width: 100px;
+  height: 90px;
+  top: 14%;
+  left: 92%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: $primary-color;
+  border: 1px solid $third-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 25px 25px 20px;
+  z-index: 2;
+  .access__profile {
+    .link__logout__modal {
+      font-size: 1.2rem;
+      color: $third-color;
+      text-decoration: none;
+      transition: 0.8s;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .logout__account {
+    .btn__logout__modal {
+      width: 121px;
+      height: 20px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: $third-color;
+      transition: 0.8s;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

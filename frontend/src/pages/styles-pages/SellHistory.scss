@@ -1,0 +1,256 @@
+@media screen and (max-width: 600px) {
+  .sellHistory {
+    height: 80vh;
+
+    h2 {
+      color: white;
+      font-family: $fontTitre;
+      font-weight: lighter;
+      padding-top: 30px;
+      padding-left: 25px;
+    }
+
+    .userBoardSection {
+      display: none;
+    }
+
+    .sellsBoard {
+      .sellsStatistics {
+        display: none;
+      }
+
+      .sellsDetail {
+        padding-top: 20px;
+
+        .sellsList {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          color: white;
+          font-family: $fontTitre;
+          padding-top: 20px;
+          padding-bottom: 30px;
+          background-color: #1a1c1e;
+          border-top: 1px solid #2c2c2c;
+          border-bottom: 1px solid #2c2c2c;
+
+          img {
+            width: 30px;
+          }
+        }
+      }
+
+      .sellsTable {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .sellHistory {
+    h2 {
+      display: none;
+    }
+
+    .sellSection {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 35px;
+      padding-right: 60px;
+
+      .userBoardSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1a1c1e;
+        box-shadow: 5px 5px 10px black;
+        border: 1px solid #2c2c2c;
+        border-radius: 20px;
+        padding: 35px;
+
+        .userProfile {
+          .userName {
+            display: none;
+          }
+
+          .userImg {
+            padding-top: 30px;
+
+            img {
+              width: 200px;
+              height: 200px;
+              border-radius: 30px;
+            }
+          }
+
+          p {
+            display: flex;
+            justify-content: center;
+            color: $secondary-color;
+            font-family: $fontTitre;
+            text-decoration: underline;
+            padding-top: 0;
+            font-size: 15px;
+          }
+        }
+
+        .boardList {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-family: $fontTitre;
+          font-size: 25px;
+          padding-top: 20px;
+
+          li {
+            padding-bottom: 28px;
+            color: white;
+          }
+        }
+      }
+
+      .sellsBoard {
+        display: flex;
+        flex-direction: column;
+
+        .sellsStatistics {
+          display: flex;
+          justify-content: space-around;
+          color: white;
+          font-family: $fontTitre;
+          font-weight: lighter;
+          padding-bottom: 60px;
+
+          .totalSales {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+            height: 90px;
+            background-color: #1a1c1e;
+            box-shadow: 4px 4px 6px #121212;
+            border: 1px solid #2c2c2cbe;
+            border-radius: 20px;
+            padding: 20px;
+            .totalSales_title {
+              display: flex;
+              .icon {
+                background-color: $third-color;
+                border-radius: 20px;
+                padding: 5px;
+                font-size: 25px;
+                // color: black;
+              }
+              h3 {
+                padding-bottom: 15px;
+                padding-left: 15px;
+              }
+            }
+            p {
+              font-family: $fontText;
+              font-size: 25px;
+              color: $third-color;
+            }
+          }
+          .visitors {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+            height: 90px;
+            background-color: #1a1c1e;
+            box-shadow: 4px 4px 6px #121212;
+            border: 1px solid #2c2c2c;
+            border-radius: 20px;
+            padding: 20px;
+            .visitors_title {
+              display: flex;
+              .icon {
+                background-color: $third-color;
+                border-radius: 20px;
+                padding: 5px;
+                font-size: 25px;
+                // color: black;
+              }
+              h3 {
+                padding: 0 0 15px 15px;
+              }
+            }
+            p {
+              font-family: $fontText;
+              font-size: 25px;
+              color: $third-color;
+            }
+          }
+          .totalOrders {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+            height: 90px;
+            background-color: #1a1c1e;
+            box-shadow: 4px 4px 6px #121212;
+            border: 1px solid #2c2c2c;
+            border-radius: 20px;
+            padding: 20px;
+            .totalOrders_title {
+              display: flex;
+              .icon {
+                background-color: $third-color;
+                border-radius: 20px;
+                padding: 5px;
+                font-size: 25px;
+                // color: black;
+              }
+              h3 {
+                padding: 0 0 15px 15px;
+              }
+            }
+            p {
+              font-family: $fontText;
+              font-size: 25px;
+              color: $third-color;
+            }
+          }
+        }
+
+        .sellsDetail {
+          .sellsList {
+            display: none;
+          }
+        }
+
+        .sellsTable {
+          display: block;
+          height: 400px;
+          overflow-y: scroll;
+          background-color: #1a1c1e;
+          box-shadow: 4px 4px 6px #121212;
+          border: 1px solid #2c2c2c;
+          border-radius: 20px;
+          color: white;
+          font-family: $fontTitre;
+          padding: 25px;
+
+          th {
+            padding: 10px;
+            border-bottom: 1px solid #2c2c2c;
+            border-spacing: 0 10px;
+          }
+
+          td {
+            padding: 10px;
+            border-bottom: 1px solid #2c2c2c;
+            border-spacing: 0 10px;
+
+            img {
+              width: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

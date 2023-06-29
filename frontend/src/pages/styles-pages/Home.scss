@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px) {
+  .homePage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    .header {
+      display: flex;
+    }
+    .footerDesktop {
+      display: none;
+    }
+    .filterDesktop-container {
+      display: none;
+    }
+  }
+  // .homePage::-webkit-scrollbar {
+  //   display: none;
+  // }
+}
+
+@media screen and (min-width: 601px) {
+  .wrapper {
+    display: none;
+  }
+  .homePage {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .filterAndCatalog {
+      display: flex;
+      .filterDesktop-container {
+        min-width: 16vw;
+      }
+    }
+    .filterDesktop-container {
+      padding-top: 108px;
+    }
+  }
+
+  .footerMobile {
+    display: none;
+  }
+
+  .footerDesk {
+    display: flex;
+    padding: 20px 0;
+  }
+  .filterMobile-container {
+    display: none;
+  }
+}
